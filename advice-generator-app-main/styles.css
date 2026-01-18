@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:  hsl(218, 23%, 16%);
+align-items: center;
+justify-content: center;
+display: flex;
+font-family: 'Manrope', sans-serif;
+}
+
+#container{
+background-color: hsl(217, 19%, 24%);
+border: 1px solid hsl(217, 19%, 24%);
+border-radius: 10px;
+width: 530px;
+max-width: 520px;
+text-align: center;
+padding: 28px 36px;
+margin: 10%;
+}
+
+h2{
+ color: hsl(150, 100%, 66%);
+ font-size: 13px;
+ letter-spacing: 3px;
+}
+
+p{
+  color: hsl(193, 38%, 86%);
+  margin: 25px 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+#divider{
+
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 30px auto;
+}
+
+#divider{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#dice{
+  background: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 80px;
+  padding: 12px;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.12s ease, box-shadow 0.15s ease;
+  left: 48.5%;
+ 
+}
+#dice:hover{
+ 
+  transform: scale(1.1);
+   transition: filter 0.2s ease
+}
+
+#dice:active{
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
+  filter: brightness(1);
+}
+
+/* Responsivenss*/
+@media (max-width: 540px){
+  #container{
+    margin: 20%;
+  }
+  #dice{
+    left: 45.8%;
+  }
+}
