@@ -19,8 +19,8 @@ place-items: center;
 background-color: hsl(217, 19%, 24%);
 border: 1px solid hsl(217, 19%, 24%);
 border-radius: 12px;
-width: min(90%, 530px);
-max-width: 520px;
+width: 540px;
+max-width: 540px;
 text-align: center;
 padding: 28px 36px;
 margin: 10%;
@@ -37,7 +37,7 @@ h2{
 p{
   color: hsl(193, 38%, 86%);
   margin: 25px 0;
-  font-size: clamp(1.4rem, 2vw, 1.7rem);
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -87,18 +87,19 @@ p{
   filter: brightness(1);
 }
 
-/* Responsivenss*/
+/*  Mobile Responsivenss*/
 @media (min-width: 360px){
   #container{
    padding: 2.5rem;
-   width: 400px;
+   width: 360px;
    height: auto;
-   font-size: 18px;
+   font-size: 16px;
   }
    
  p{
     width: 80%;
     margin: 20px auto;
+    font-size: 20px;
  }
 
 
@@ -113,4 +114,18 @@ p{
     width: 24px;
     height: 24px;
   }
+}
+
+/*  Desktop Responsiveness */
+@media (min-width: 768px){
+  #container{
+    width: 640px;
+    padding: 2.5rem 3.5rem;
+  }
+
+    p{
+
+    margin: 25px auto;
+    font-size: 22px;
+ }
 }
