@@ -10,29 +10,34 @@ align-items: center;
 justify-content: center;
 display: flex;
 font-family: 'Manrope', sans-serif;
+min-height: 100vh;
+place-items: center;
 }
+
 
 #container{
 background-color: hsl(217, 19%, 24%);
 border: 1px solid hsl(217, 19%, 24%);
-border-radius: 10px;
-width: 530px;
+border-radius: 12px;
+width: min(90%, 530px);
 max-width: 520px;
 text-align: center;
 padding: 28px 36px;
 margin: 10%;
+justify-content: baseline;
+margin: 15% auto;
 }
 
 h2{
  color: hsl(150, 100%, 66%);
- font-size: 13px;
+ font-size: clamp(1.2rem, 2.5vw, 1.8rem);
  letter-spacing: 3px;
 }
 
 p{
   color: hsl(193, 38%, 86%);
   margin: 25px 0;
-  font-size: 28px;
+  font-size: clamp(1.4rem, 2vw, 1.7rem);
   font-weight: 600;
   line-height: 1.2;
 }
@@ -42,7 +47,7 @@ p{
   position: relative;
   width: 100%;
   max-width: 520px;
-  margin: 30px auto;
+  margin: 32px auto;
 }
 
 #divider{
@@ -62,8 +67,9 @@ p{
   align-items: center;
   justify-content: center;
   transition: filter 0.12s ease, box-shadow 0.15s ease;
-  left: 48.5%;
- 
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
 }
 #dice:hover{
  
@@ -77,11 +83,9 @@ p{
 }
 
 /* Responsivenss*/
-@media (max-width: 540px){
+@media (min-width: 768px){
   #container{
-    margin: 20%;
+   padding: 2.5rem;
   }
-  #dice{
-    left: 45.8%;
-  }
+
 }
