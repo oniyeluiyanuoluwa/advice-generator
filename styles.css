@@ -24,7 +24,6 @@ max-width: 540px;
 text-align: center;
 padding: 28px 36px;
 margin: 10%;
-justify-content: baseline;
 margin: 15% auto;
 }
 
@@ -73,7 +72,6 @@ p{
   justify-content: center;
   transition: filter 0.12s ease, box-shadow 0.15s ease;
   left: 50%;
-  transform: translateX(-50%);
   margin-top: 15px;
 }
 #dice:hover{
