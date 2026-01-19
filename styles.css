@@ -56,6 +56,11 @@ p{
   height: auto;
 }
 
+#divider img{
+  width: 100%;
+  height: auto;
+}
+
 #dice{
   background: hsl(150, 100%, 66%);
   border: none;
@@ -67,8 +72,8 @@ p{
   align-items: center;
   justify-content: center;
   transition: filter 0.12s ease, box-shadow 0.15s ease;
-  left: 49%;
-  
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 15px;
 }
 #dice:hover{
@@ -83,9 +88,29 @@ p{
 }
 
 /* Responsivenss*/
-@media (min-width: 320px){
+@media (min-width: 360px){
   #container{
    padding: 2.5rem;
+   width: 400px;
+   height: auto;
+   font-size: 18px;
+  }
+   
+ p{
+    width: 80%;
+    margin: 20px auto;
+ }
+
+
+    #dice{
+    padding: 24px;
+ width: 60px;
+ height: 60px;
+
   }
 
+  #dice img{
+    width: 24px;
+    height: 24px;
+  }
 }
