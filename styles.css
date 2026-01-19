@@ -67,8 +67,8 @@ p{
   align-items: center;
   justify-content: center;
   transition: filter 0.12s ease, box-shadow 0.15s ease;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 49%;
+  
   margin-top: 15px;
 }
 #dice:hover{
@@ -83,7 +83,7 @@ p{
 }
 
 /* Responsivenss*/
-@media (min-width: 768px){
+@media (min-width: 320px){
   #container{
    padding: 2.5rem;
   }
