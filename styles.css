@@ -23,9 +23,8 @@ width: 540px;
 max-width: 540px;
 text-align: center;
 padding: 28px 36px;
-margin: 10%;
 margin: 15% auto;
-}
+}       
 
 h2{
  color: hsl(150, 100%, 66%);
@@ -71,7 +70,7 @@ p{
   align-items: center;
   justify-content: center;
   transition: filter 0.12s ease, box-shadow 0.15s ease;
-  left: 50%;
+  left: 48.5%;
   margin-top: 15px;
 }
 #dice:hover{
@@ -105,12 +104,13 @@ p{
     padding: 24px;
  width: 60px;
  height: 60px;
-
+left: 46.3%
   }
 
   #dice img{
     width: 24px;
     height: 24px;
+    
   }
 }
 
@@ -121,8 +121,11 @@ p{
     padding: 2.5rem 3.5rem;
   }
 
-    p{
+#dice{
+  left: 48.3%
+}
 
+    p{
     margin: 25px auto;
     font-size: 22px;
  }
